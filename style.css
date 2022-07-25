@@ -1,91 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 body {
-  background-color: fffbfa;
-  color: 02010a;
-  font-family: 'Open Sans', sans-serif;
+  background-color: rgba(72,129,231,0.05);
+  font-family: Roboto Mono, sans-serif;
+  color: #6D7783;
   font-size: 16px;
   line-height: normal;
 }
-h1, h2, h3{
-  color:00bd9d;
-  font-family: 'Roboto', sans-serif;
-  line-height: normal;
-}
-h1{
+
+h1 {
+  color: #203663;
   font-size: 40px;
 }
-h2{
+h2 {
+  color: #36497A;
   font-size: 24px;
 }
-h3{
-  font-size: 16px;
-}
-p{
-  margin-bottom: 40px;
-}
-a{
-  color: 6B72E1;
-  font-size: 48px;
-  font-weight: bold;
+
+a {
   text-decoration: none;
+  color: #4881e7;
 }
-a:hover{
-  color: 8bd7d2;
+a:hover {
+  color: #3498F9;
 }
-.container{
-  margin: 0 auto;
-}
-.card-white{
-  width: 90%;
-  margin: 20px auto;
-  background: white;
-  padding: 40px;
+
+.card-white {
+  background-color: white;
   border-radius: 4px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0px 10px 30px rgba(72,129,231,0.15);
+  padding : 40px;
+  margin : 24px auto;
 }
-.img-circle{
-  border-radius: 50%;
-}
-.text-center{
-  text-align: center;
-}
-.text-justify{
-  text-align: justify;
-}
+
 .btn-blue {
-  background-color: #6B72E1;
   color: white;
-  font-size: Medium;
-  font-weight: 600px;
+  font-weight: bold;
+  background-color: #4881E7;
+  padding : 16px;
   border-radius: 4px;
-  padding: 16px 32px;
+  border: 1px solid transparent;
 }
 .btn-blue:hover {
-  background-color: 8bd7d2;
-  color: white;
-  border-radius: 4px;
-  padding: 16px 32px;
+  color: #4881E7;
+  background-color: white;
+  border: 1px solid #4881E7;
 }
-.list-inline > li {
-  display: inline-block;
-  padding: 0px 20px;
+
+.img-circle {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
 }
+
+.text-center {
+  text-align: center;
+}
+
 .list-inline {
   list-style: none;
   padding-left: 0px;
 }
+.list-inline li {
+  display: inline-block;
+  padding : 0px 8px;
+}
+
+.container {
+  margin : 24px auto;
+  width: 880px;
+}
+
 @media (max-width: 960px) {
   .container {
     width: 700px;
   }
 }
+
 @media (max-width: 720px) {
   .container {
     width: 500px;
   }
 }
+
 @media (max-width: 540px) {
   .container {
     width: 300px;
   }
+}
+
+#intro {
+  padding-bottom: 56px;
+}
+#intro p {
+  margin-bottom: 40px;
+}
+
+#footer a {
+  font-size: 48px;
 }
